@@ -19,70 +19,19 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Все события</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <!--<li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>-->
+        <% if user_signed_in? %>
+          <li class="nav-item"><%= link_to 'Профиль', current_user, class: "nav-link" %></li>
+          <li class="nav-item"><%= link_to 'Выйти', destroy_user_session_path, :method => :delete, class: "nav-link" %></li>
+        <% else %>
+          <li class="nav-item"><%= link_to 'Войти', new_user_session_path, class: "nav-link" %></li>
+          <li class="nav-item"><%= link_to 'Зарегистрироваться', new_user_registration_path, class: "nav-link" %></li>
+        <% end %>
       </ul>
     </div>
   </nav>
 
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-9">
         <%= yield %>
-      </div>
-      <div class="col-md-3">
-
-        <!-- Search Widget -->
-        <div class="card my-4">
-          <h5 class="card-header">Search</h5>
-          <div class="card-body">
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search for...">
-              <span class="input-group-append">
-                <button class="btn btn-secondary" type="button">Go!</button>
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Categories Widget -->
-        <div class="card my-4">
-          <h5 class="card-header">Categories</h5>
-          <div class="card-body">
-            <ul class="list-unstyled mb-0">
-              <li>
-                <a href="#">Link 1</a>
-              </li>
-              <li>
-                <a href="#">Link 2</a>
-              </li>
-              <li>
-                <a href="#">Link 3</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-    </div><!--/row-->
 
     <footer>
       <p>&copy; Company <%= Time.now.year %></p>
