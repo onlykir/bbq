@@ -7,4 +7,12 @@ module ApplicationHelper
     # TODO: user real avatars
     'user.png'
   end
+
+  def flash_class_name(name)
+    case name
+    when 'notice' then 'secondary'
+    when 'alert'  then 'danger'
+    else name
+    end
+  end
 end

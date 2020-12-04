@@ -32,11 +32,17 @@
 
   <div class="container-fluid">
     <% flash.each do |name, msg| %>
-      <div class="mt-3 alert alert-<%= name %>">
-        <%= msg %>
-      </div>
+      <% if msg.is_a?(String) %>
+        <div class="mt-3 alert alert-<%= flash_class_name(name) %>" role="alert">
+          <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span>
+            <span class="sr-only">Close</span>
+          </button>
+          <%= content_tag :div, msg, :id => "flash_#{name}" %>
+        </div>
+      <% end %>
     <% end %>
-        <%= yield %>
+
+    <%= yield %>
 
     <footer>
       <p>&copy; Company <%= Time.now.year %></p>
