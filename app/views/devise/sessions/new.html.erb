@@ -1,0 +1,38 @@
+<% content_for :devise_form do %>
+  <h2 class="mb-4">Вход</h2>
+
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <div class="field">
+      <%= f.email_field :email, autofocus: true, autocomplete: "email",
+                        placeholder: "E-mail", class: "form-control mb-4" %>
+    </div>
+
+    <div class="field">
+      <%= f.password_field :password, autocomplete: "current-password",
+                           placeholder: "Password", class: "form-control mb-4"%>
+    </div>
+
+    <div class="d-flex justify-content-around">
+      <div>
+        <!-- Remember me -->
+        <% if devise_mapping.rememberable? %>
+          <div class="custom-control custom-checkbox">
+            <%= f.check_box :remember_me, class: "custom-control-input" %>
+            <%= f.label :remember_me, class: "custom-control-label" %>
+          </div>
+        <% end %>
+      </div>
+      <div>
+        <!-- Forgot password -->
+        <%= render "devise/shared/links" %>
+      </div>
+    </div>
+
+
+    <%= f.submit "Готово", class: "btn btn-dark my-4 btn-block" %>
+
+  <% end %>
+
+<% end %>
+
+<%= render "devise/shared/form_wrap" %>

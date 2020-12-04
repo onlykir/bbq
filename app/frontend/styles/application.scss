@@ -46,3 +46,19 @@
 .thumbnail-inner {
   padding: 20px 4px 4px;
 }
+
+.form-control:focus {
+  border-color: #2c2c2c;
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before{
+  background-color:black;
+}
+
+.custom-checkbox .custom-control-input:focus~.custom-control-label::before{
+  box-shadow: 0 0 0 1px black, 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
+}
+.custom-control-input:checked ~ .custom-control-label::before{
+  border-color:black;
+}

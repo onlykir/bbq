@@ -1,0 +1,35 @@
+<% content_for :devise_form do %>
+  <h2 class="mb-4">Регистрация</h2>
+
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+    <div class="field">
+      <%= f.email_field :email, autofocus: true, autocomplete: "email",
+                        placeholder: "E-mail", class: "form-control mb-4" %>
+    </div>
+
+    <div class="field">
+      <%= f.password_field :password, autocomplete: "new-password",
+                           placeholder: "Password", class: "form-control mb-4"%>
+    </div>
+
+    <div class="field">
+      <%= f.password_field :password_confirmation, autocomplete: "new-password",
+                           placeholder: "Password confirmation", class: "form-control"%>
+      <% if @minimum_password_length %>
+        <small class="form-text text-muted">
+          Не менее <%= @minimum_password_length %> символов
+        </small>
+      <% end %><br />
+    </div>
+
+    <%= f.submit "Готово", class: "btn btn-dark my-4 btn-block" %>
+
+    <hr>
+  <% end %>
+  <p>Уже есть аккаунт? <%= render "devise/shared/links" %>
+  </p>
+<% end %>
+
+<%= render "devise/shared/form_wrap" %>
