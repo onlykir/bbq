@@ -32,3 +32,9 @@ ru:
   app:
     name: 'Шашлыки'
     author: 'Кекелев Кирилл'
+
+  # Склонятор
+  error:
+      one: '%{count} ошибка'
+      few: '%{count} ошибки'
+      many: '%{count} ошибок'
