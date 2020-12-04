@@ -3,11 +3,11 @@
 <% if errors.any? %>
   <div class="alert alert-danger">
     <div class="lead buffer-bottom">
-      В вашей форме <%= errors.count %> ошибок
+      В вашей форме <%= errors.count %> <%= declination_of_word(errors.count, "ошибка", "ошибки", "ошибок") %>
     </div>
 
     <ul>
-      <% user.errors.full_messages.each do |message| %>
+      <% errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
     </ul>

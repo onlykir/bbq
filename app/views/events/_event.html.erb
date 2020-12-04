@@ -9,7 +9,7 @@
       <div class="caption">
         <div class="event-description buffer-left ">
           <h3><%= link_to event.title, event_path(event) %></h3>
-          <h3><small><%= event.datetime %></small></h3>
+          <h3><small><%= l event.datetime, format: :long %></small></h3>
           <div class="buffer-both"><%= event.address %></div>
         </div>
       </div>
