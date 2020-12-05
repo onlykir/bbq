@@ -46,6 +46,10 @@
 
     <footer>
       <p>&copy; <%= t('pages.layout.static.author') %>, 2020</p>
+      <ul>
+        <li><%= link_to 'English', root_path(locale: :en), class: "text-secondary" %></li>
+        <li><%= link_to 'Русский', root_path(locale: :ru), class: "text-secondary"%></li>
+      </ul>
     </footer>
 
   </div> <!-- /container -->
