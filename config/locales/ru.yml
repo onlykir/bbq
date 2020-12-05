@@ -9,7 +9,7 @@ ru:
     # Перевод названий аттрибутов моделей
     attributes:
       user:
-        email: 'Email'
+        email: 'Почта'
         name: 'Имя'
         password: 'Пароль'
         password_confirmation: 'Подтверждение пароля'
@@ -28,13 +28,76 @@ ru:
     users:
       updated: 'Вы обновили свой профиль'
 
-  # Перевод названия приложения и компании-разработчика
-  app:
-    name: 'Шашлыки'
-    author: 'Кекелев Кирилл'
+  # Глобальные
+  global:
+    error:
+      one: 'В вашей форме одна ошибка'
+      few: 'В вашей форме %{count} ошибки'
+      many: 'В вашей форме %{count} ошибок'
+    forms:
+      ready: 'Готово'
+      save: 'Сохранить'
+      back: 'вернуться'
+      login: 'Войти'
+      forget_password: 'Забыли пароль?'
+      change_password: 'Сменить пароль'
+      placeholder:
+        email: 'Почта'
+        password: 'Пароль'
+        password_confirmation: 'Подтверждение пароля'
+        p_s_condition: 'Не менее %{count} символов'
 
-  # Склонятор
-  error:
-      one: '%{count} ошибка'
-      few: '%{count} ошибки'
-      many: '%{count} ошибок'
+  # Вьюхи
+  pages:
+    layout:
+      button:
+        sign_in: 'Войти'
+        sign_up: 'Зарегистрироваться'
+        profile: 'Профиль'
+        sign_out: 'Выйти'
+      static:
+        app_name: 'Шашлыки'
+        author: 'Кекелев Кирилл'
+
+    user:
+      show:
+        button:
+          edit_profile: 'Редактировать профиль'
+        static:
+          orgonized: 'Организовал'
+          nothing_orgonized: 'пока не организовал ни одного события'
+      edit:
+        static:
+          name: 'Редактирование профиля'
+
+    events:
+      index:
+        static:
+          name: 'События'
+        button:
+          create: 'Создать событие'
+      show:
+        button:
+          change: 'Изменить'
+      edit:
+        static:
+          name: 'Редактирование события'
+      new:
+        static:
+          name: 'Новое событие'
+
+    devise:
+      password:
+        new:
+          static:
+            name: 'Забыли пароль?'
+          button:
+            reestablish: 'Восстановить'
+      registration:
+        new:
+          static:
+            name: 'Регистрация'
+            account?: 'Уже есть аккаунт?'
+      session:
+        static:
+          name: 'Вход'

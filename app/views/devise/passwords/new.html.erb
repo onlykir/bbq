@@ -1,16 +1,16 @@
 <% content_for :devise_form do %>
-  <h2 class="mb-4">Забыли пароль?</h2>
+  <h2 class="mb-4"><%= t('pages.devise.password.new.static.name') %></h2>
 
   <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
     <%= render "devise/shared/error_messages", resource: resource %>
 
     <div class="field">
       <%= f.email_field :email, autofocus: true, autocomplete: "email",
-                        placeholder: "E-mail", class: "form-control mb-4"%>
+                        placeholder: t('global.forms.placeholder.email'), class: "form-control mb-4"%>
     </div>
 
     <div class="actions">
-      <%= f.submit "Восстановить", class: "btn btn-dark my-4 btn-block" %>
+      <%= f.submit t('pages.devise.password.new.button.reestablish'), class: "btn btn-dark my-4 btn-block" %>
     </div>
   <% end %>
 

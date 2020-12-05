@@ -1,11 +1,11 @@
-<h1 class="mt-4">Редактирование профиля</h1>
+<h1 class="mt-4"><%= t('pages.user.edit.static.name') %></h1>
 
 <div class="row">
   <div class="col-md-6 buffer-top">
     <%= render 'form' %>
 
     <p class="buffer-top">
-      <%= link_to 'Сменить пароль', edit_user_registration_path, class: "text-secondary" %>
+      <%= link_to t('global.forms.change_password'), edit_user_registration_path, class: "text-secondary" %>
     </p>
 
   </div>

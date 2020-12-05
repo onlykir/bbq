@@ -1,33 +1,103 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at https://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  # Перевод моделей
+  activerecord:
+    # Перевод названия моделей
+    models:
+      user: 'User'
+      event: 'Event'
+
+    # Перевод названий аттрибутов моделей
+    attributes:
+      user:
+        email: 'Email'
+        name: 'Name'
+        password: 'Password'
+        password_confirmation: 'Confirm password'
+      event:
+        title: 'Title'
+        address: 'Location'
+        datetime: 'Date and time'
+        description: 'Description'
+
+  # Перевод сообщений, которые отправляет контроллер
+  controllers:
+    events:
+      created: 'You have created a new event'
+      updated: 'You have updated the event'
+      destroyed: 'You have deleted the event'
+    users:
+      updated: 'You have updated your profile'
+
+  # Глобальные
+  global:
+    error:
+      one: 'One error in your form'
+      few: '%{count} errors in your form'
+      many: '%{count} errors in your form'
+    forms:
+      ready: 'Ready'
+      save: 'Save'
+      back: 'back'
+      login: 'Login'
+      forget_password: 'Forgot your password?'
+      change_password: 'Change password'
+      placeholder:
+        email: 'E-mail'
+        password: 'Password'
+        password_confirmation: 'Password confirmation'
+        p_s_condition: 'At least %{count} symbols'
+
+  # Вьюхи
+  pages:
+    layout:
+      button:
+        sign_in: 'Login'
+        sign_up: 'Registration'
+        profile: 'Profile'
+        sign_out: 'Exit'
+      static:
+        app_name: 'BBQ'
+        author: 'Kirill Kekelev'
+
+    user:
+      show:
+        button:
+          edit_profile: 'Edit profile'
+        static:
+          orgonized: 'Organized'
+          nothing_orgonized: "hasn't organized any events yet"
+      edit:
+        static:
+          name: 'Profile editing'
+
+    events:
+      index:
+        static:
+          name: 'Events'
+        button:
+          create: 'Create event'
+      show:
+        button:
+          change: 'Change'
+      edit:
+        static:
+          name: 'Edit event'
+      new:
+        static:
+          name: 'New event'
+
+    devise:
+      password:
+        new:
+          static:
+            name: 'Forgot your password?'
+          button:
+            reestablish: 'Reestablish'
+      registration:
+        new:
+          static:
+            name: 'Registration'
+            account?: 'Already have an account?'
+      session:
+        static:
+          name: 'Login'
