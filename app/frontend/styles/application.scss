@@ -62,3 +62,12 @@
 .custom-control-input:checked ~ .custom-control-label::before{
   border-color:black;
 }
+
+.btn-danger {
+  background-color: #730E15;
+  border-color: #730E15 ;
+}
+.btn-danger:hover {
+  background-color: #4b0714;
+  border-color: #4b0714;
+}

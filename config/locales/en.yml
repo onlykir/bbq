@@ -30,6 +30,11 @@ en:
 
   # Глобальные
   global:
+    confirm:
+      consent: 'Are you sure you want to delete this event?'
+      warning: "If you click 'Yes', then you won't be able to return this event back"
+      ok: 'Yes'
+      cancel: 'Cancel'
     error:
       one: 'One error in your form'
       few: '%{count} errors in your form'
@@ -39,6 +44,7 @@ en:
       save: 'Save'
       back: 'back'
       login: 'Login'
+      delete: 'Delete'
       forget_password: 'Forgot your password?'
       change_password: 'Change password'
       placeholder:

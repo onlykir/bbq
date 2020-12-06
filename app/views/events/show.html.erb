@@ -18,6 +18,12 @@
             <div class="buffer-top">
               <%= link_to t('pages.events.show.button.change'), edit_event_path(@event),
                           class: 'btn btn-dark buffer-both' %>
+              <%= link_to t('global.forms.delete'), @event, method: :delete,
+                          class: 'btn btn-danger buffer-both',
+                          data: { title: t('global.confirm.consent'),
+                                  confirm: t('global.confirm.warning'),
+                                  commit: t('global.confirm.ok'),
+                                  cancel: t('global.confirm.cancel') } %>
             </div>
           <% end %>
         </div>
