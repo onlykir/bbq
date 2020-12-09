@@ -27,6 +27,7 @@ en:
       destroyed: 'You have deleted the event'
     users:
       updated: 'You have updated your profile'
+      destroyed: 'You have deleted the account'
 
   # Глобальные
   global:
@@ -39,7 +40,9 @@ en:
       one: 'One error in your form'
       few: '%{count} errors in your form'
       many: '%{count} errors in your form'
+      close: 'Close'
     forms:
+      or: 'or'
       ready: 'Ready'
       save: 'Save'
       back: 'back'
@@ -51,6 +54,8 @@ en:
         email: 'E-mail'
         password: 'Password'
         password_confirmation: 'Password confirmation'
+        new_password: 'New password'
+        new_password_confirmation: 'New password confirmation'
         p_s_condition: 'At least %{count} symbols'
 
   # Вьюхи
@@ -99,11 +104,22 @@ en:
             name: 'Forgot your password?'
           button:
             reestablish: 'Reestablish'
+        edit:
+          static:
+            name: 'Change your password'
+            
       registration:
         new:
           static:
             name: 'Registration'
             account?: 'Already have an account?'
+        edit:
+          static:
+            name: 'Account editing'
+            delete_account: 'Want to delete your account?'
+            confirm:
+              consent: 'Are you sure you want to delete account?'
+              warning: "If you click 'Yes', then you won't be able to return your account"
       session:
         static:
           name: 'Login'

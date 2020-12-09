@@ -39,7 +39,9 @@ ru:
       one: 'В вашей форме одна ошибка'
       few: 'В вашей форме %{count} ошибки'
       many: 'В вашей форме %{count} ошибок'
+      close: 'Закрыть'
     forms:
+      or: 'или'
       ready: 'Готово'
       save: 'Сохранить'
       back: 'вернуться'
@@ -51,6 +53,8 @@ ru:
         email: 'Почта'
         password: 'Пароль'
         password_confirmation: 'Подтверждение пароля'
+        new_password: 'Новый пароль'
+        new_password_confirmation: 'Подтверждение нового пароля'
         p_s_condition: 'Не менее %{count} символов'
 
   # Вьюхи
@@ -104,6 +108,13 @@ ru:
           static:
             name: 'Регистрация'
             account?: 'Уже есть аккаунт?'
+        edit:
+          static:
+            name: 'Редактирование аккаунта'
+            delete_account: 'Хотите удалить ваш аккаунт?'
+            confirm:
+              consent: 'Вы уверены, что хотите удалить аккаунт?'
+              warning: "При нажатии на 'Да' вы не сможете вернуть обратно ваш аккаунт"
       session:
         static:
           name: 'Вход'

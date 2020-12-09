@@ -20,6 +20,11 @@ class UsersController < ApplicationController
     end
   end
 
+  def destroy
+    @user.destroy
+    redirect_to root_path, notice: I18n.t('controllers.users.destroyed')
+  end
+
   private
 
   def set_current_user
