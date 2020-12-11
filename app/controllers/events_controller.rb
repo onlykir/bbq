@@ -11,6 +11,8 @@ class EventsController < ApplicationController
 
   # GET /events/1
   def show
+    @new_comment = @event.comments.build(params[:comment])
+    @new_subscription = @event.subscriptions.build(params[:subscription])
   end
 
   # GET /events/new

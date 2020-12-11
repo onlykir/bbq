@@ -30,6 +30,7 @@ ru:
 
   # Глобальные
   global:
+    language: 'Язык'
     confirm:
       consent: 'Вы уверены, что хотите удалить это событие?'
       warning: "При нажатии на 'Да' вы не сможете вернуть обратно данное событие"
@@ -45,12 +46,15 @@ ru:
       ready: 'Готово'
       save: 'Сохранить'
       back: 'вернуться'
+      subscribe: 'Подписаться'
       login: 'Войти'
       delete: 'Удалить'
       forget_password: 'Забыли пароль?'
       change_password: 'Сменить пароль'
       placeholder:
         email: 'Почта'
+        name: 'Имя'
+        body_comment: 'Ваш комментарий'
         password: 'Пароль'
         password_confirmation: 'Подтверждение пароля'
         new_password: 'Новый пароль'
@@ -87,6 +91,10 @@ ru:
         button:
           create: 'Создать событие'
       show:
+        static:
+          calling: 'Зовёт:'
+          will_go: 'Пойдут:'
+          i_will_go: 'Я пойду:'
         button:
           change: 'Изменить'
       edit:
@@ -95,6 +103,26 @@ ru:
       new:
         static:
           name: 'Новое событие'
+
+    comments:
+      create:
+        created: 'Ваш комментарий добавлен'
+        not_created: "Вы не можете добавить комментарий"
+      destroy:
+        destroyed: 'Ваш комментарий удалён'
+        not_destroyed: "Вы не можете удалить комментарий"
+      confirm:
+        consent: 'Вы уверены, что хотите удалить комментарий?'
+
+    subscriptions:
+      create:
+        created: 'Подписка на событие оформлена'
+        not_created: "Вы не можете отписаться от этого события"
+      destroy:
+        destroyed: 'Подписка отменена'
+        not_destroyed: "Вы не можете отменить подписку"
+      confirm:
+        consent: 'Уверены, что хотите отменить подписку?'
 
     devise:
       password:

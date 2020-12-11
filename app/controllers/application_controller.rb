@@ -4,10 +4,17 @@ class ApplicationController < ActionController::Base
 
   add_flash_types :danger, :info, :warning, :success
 
+  helper_method :current_user_can_edit?
+
   def configure_permitted_parameters
     devise_parameter_sanitizer.enum_for(:account_update) do |u|
       u.permit(:password, :password_confirmation, :current_password)
     end
+  end
+
+  def current_user_can_edit?(model)
+    user_signed_in? &&
+    (model.user == current_user || (model.try(:event).present? && model.event.user == current_user))
   end
 
   def default_url_options

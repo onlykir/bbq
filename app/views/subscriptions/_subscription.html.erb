@@ -1,0 +1,17 @@
+<span class="subscription">
+  <% if subscription.user.present? %>
+    <%= render partial: 'users/user', object: subscription.user %>
+  <% else %>
+    <em><%= subscription.user_name %></em>
+  <% end %>
+  <% if current_user_can_edit?(subscription) %>
+    <%= link_to(
+            fa_icon('times'),
+            event_subscription_path(subscription.event, subscription),
+            method: :delete,
+            data: { confirm: t('pages.subscriptions.confirm.consent'),
+                    commit: t('global.confirm.ok'),
+                    cancel: t('global.confirm.cancel') }
+        ) %>
+  <% end %>
+</span>

@@ -1,6 +1,33 @@
 @import '~bootstrap/scss/bootstrap';
 @import 'event';
 
+html,
+body,
+.wrapper {
+	height: 100%;
+}
+.content {
+	box-sizing: border-box;
+	min-height: 100%;
+	padding-bottom: 90px;
+}
+.footer {
+  padding: 20px;
+	height: 85px;
+	margin-top: -85px;
+}
+
+a {
+  color: #666666;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #262626;
+}
+
+/* Footer */
+
 
 /* Buffers */
 .buffer-top {
