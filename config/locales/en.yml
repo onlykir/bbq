@@ -42,6 +42,7 @@ en:
       few: '%{count} errors in your form'
       many: '%{count} errors in your form'
       close: 'Close'
+      email_exists: 'User with such mail already exists'
     forms:
       or: 'or'
       ready: 'Ready'
