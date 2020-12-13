@@ -2,6 +2,7 @@ class Subscription < ApplicationRecord
   belongs_to :event
   belongs_to :user, optional: true
 
+  validate :event_of_subscriber?
   validates :event, presence: true
 
   validates :user_name, presence: true, unless: -> { user.present? }
@@ -25,6 +26,12 @@ class Subscription < ApplicationRecord
       user.email
     else
       super
+    end
+  end
+
+  def event_of_subscriber?
+    if event.user == user
+      errors.add(:event, I18n.t('global.error.event_of_subscriber'))
     end
   end
 

@@ -43,6 +43,7 @@ en:
       many: '%{count} errors in your form'
       close: 'Close'
       email_exists: 'User with such mail already exists'
+      event_of_subscriber: 'You cannot subscribe to your events'
     forms:
       or: 'or'
       ready: 'Ready'
