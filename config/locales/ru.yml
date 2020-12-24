@@ -5,12 +5,16 @@ ru:
     models:
       user: 'Пользователь'
       event: 'Событие'
+      subscription: 'Подписка'
+      comment: 'Комментарий'
+      photo: 'Фотография'
 
     # Перевод названий аттрибутов моделей
     attributes:
       user:
         email: 'Почта'
         name: 'Имя'
+        avatar: 'Аватарка'
         password: 'Пароль'
         password_confirmation: 'Подтверждение пароля'
       event:
@@ -18,6 +22,14 @@ ru:
         address: 'Место проведения'
         datetime: 'Дата и время'
         description: 'Описание'
+      comment:
+        user_name: 'Ваше имя'
+        body: 'Комментарий'
+      subscription:
+        user_name: 'Ваше имя'
+        user_email: 'Ваша почта'
+      photo:
+        photo: 'Фотография'
 
   # Перевод сообщений, которые отправляет контроллер
   controllers:
@@ -27,6 +39,11 @@ ru:
       destroyed: 'Вы удалили мероприятие'
     users:
       updated: 'Вы обновили свой профиль'
+      destroyed: 'Аккаунт успешно удалён'
+    photos:
+      error: 'Что-то не так с фотографией'
+      created: 'Вы добавили фотографию к событию'
+      destroyed: 'Вы удалили фотку'
 
   # Глобальные
   global:
@@ -47,6 +64,7 @@ ru:
       or: 'или'
       ready: 'Готово'
       save: 'Сохранить'
+      upload: 'Загрузить'
       back: 'вернуться'
       subscribe: 'Подписаться'
       login: 'Войти'
@@ -126,6 +144,9 @@ ru:
       confirm:
         consent: 'Уверены, что хотите отменить подписку?'
 
+    photos:
+      add: 'Добавил'
+
     devise:
       password:
         new:
@@ -148,3 +169,4 @@ ru:
       session:
         static:
           name: 'Вход'
+

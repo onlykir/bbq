@@ -1,6 +1,6 @@
 <span class="user">
   <span class="user-avatar">
-    <%= image_pack_tag(user_avatar(user), class: 'img-icon', style: 'width: 30px; height: 30px') %>
+    <%= image_tag(user_avatar(user), class: 'img-icon') %>
   </span>
   <span class="user-name">
     <% if request.path == user_path(user) %>

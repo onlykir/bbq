@@ -5,12 +5,16 @@ en:
     models:
       user: 'User'
       event: 'Event'
+      subscription: 'Subscription'
+      comment: 'Comment'
+      photo: 'Photo'
 
     # Перевод названий аттрибутов моделей
     attributes:
       user:
         email: 'Email'
         name: 'Name'
+        avatar: 'Avatar'
         password: 'Password'
         password_confirmation: 'Confirm password'
       event:
@@ -18,6 +22,14 @@ en:
         address: 'Location'
         datetime: 'Date and time'
         description: 'Description'
+      comment:
+        user_name: 'Your name'
+        body: 'Comment'
+      subscription:
+        user_name: 'Your name'
+        user_email: 'Your email'
+      photo:
+        photo: 'Photo'
 
   # Перевод сообщений, которые отправляет контроллер
   controllers:
@@ -28,6 +40,10 @@ en:
     users:
       updated: 'You have updated your profile'
       destroyed: 'You have deleted the account'
+    photos:
+      error: 'There is something wrong with photography'
+      created: 'You added a photo to the event'
+      destroyed: 'You deleted the photo'
 
   # Глобальные
   global:
@@ -48,6 +64,7 @@ en:
       or: 'or'
       ready: 'Ready'
       save: 'Save'
+      upload: 'Upload'
       back: 'back'
       subscribe: 'Subscribe'
       login: 'Login'
@@ -127,6 +144,8 @@ en:
       confirm:
         consent: 'Are you sure you want to cancel subscription of this event?'
 
+    photos:
+      add: 'Add'
 
     devise:
       password:
@@ -151,6 +170,8 @@ en:
             confirm:
               consent: 'Are you sure you want to delete account?'
               warning: "If you click 'Yes', then you won't be able to return your account"
+
       session:
         static:
           name: 'Login'
+

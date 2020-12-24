@@ -2,8 +2,10 @@
 <div class="col-sm-6 col-md-4">
   <div class="thumbnail buffer-bottom">
 
-    <%= content_tag 'div', '', class: 'event-background',
-                    style: "background-image: url(#{asset_pack_path('media/images/event_thumb.jpg')})" %>
+    <%= content_tag 'div', '',
+                    class: 'event-background',
+                    style: "background-image: url(#{event_photo(event)})"
+    %>
 
     <div class="thumbnail-inner event-info-inner">
       <div class="caption">
@@ -11,6 +13,11 @@
           <h3><%= link_to event.title, event_path(event) %></h3>
           <h3><small><%= l event.datetime, format: :long %></small></h3>
           <div class="buffer-both"><%= event.address %></div>
+        </div>
+        <div>
+          <% event.visitors.each do |user| %>
+            <%= image_tag user_avatar_thumb(user), class: 'img-icon buffer-bottom', title: user.name %>
+          <% end %>
         </div>
       </div>
     </div>

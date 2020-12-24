@@ -2,7 +2,7 @@
   <p><%= comment.body %></p>
   <p>
     <small>
-      <span>
+      <span class="comment">
         <% if comment.user.present? %>
           <%= render partial: 'users/user', object: comment.user %>
         <% else %>
