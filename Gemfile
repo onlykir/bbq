@@ -15,6 +15,7 @@ gem 'rails-i18n'
 
 gem 'carrierwave', '~> 2.0'
 gem 'mini_magick'
+gem 'fog-aws'
 
 group :development, :test do
   gem 'pry-rails'
