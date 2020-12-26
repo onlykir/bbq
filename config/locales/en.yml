@@ -60,6 +60,7 @@ en:
       close: 'Close'
       email_exists: 'User with such mail already exists'
       event_of_subscriber: 'You cannot subscribe to your events'
+      photo_of_subscribers: 'Photos can be added only by subscribers of the event'
     forms:
       or: 'or'
       ready: 'Ready'
