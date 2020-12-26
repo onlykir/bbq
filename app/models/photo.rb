@@ -4,6 +4,7 @@ class Photo < ApplicationRecord
 
   validates :event, presence: true
   validates :user, presence: true
+  validates :photo, presence: true
   validate :photo_of_subscriber?
 
   mount_uploader :photo, PhotoUploader
@@ -11,7 +12,7 @@ class Photo < ApplicationRecord
   scope :persisted, -> { where "id IS NOT NULL"}
 
   def photo_of_subscriber?
-    unless event.subscribers.exists?(id: user)
+    unless (event.subscribers.exists?(id: user)) || (event.user == user)
       errors.add(:user, I18n.t('global.error.photo_of_subscribers'))
     end
   end
