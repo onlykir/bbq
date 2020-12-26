@@ -14,7 +14,7 @@
           <h3><small><%= l event.datetime, format: :long %></small></h3>
           <div class="buffer-both"><%= event.address %></div>
         </div>
-        <div>
+        <div class="event-subscribers-icon">
           <% event.visitors.each do |user| %>
             <%= image_tag user_avatar_thumb(user), class: 'img-icon buffer-bottom', title: user.name %>
           <% end %>
