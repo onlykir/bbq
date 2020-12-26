@@ -1,5 +1,6 @@
 @import '~bootstrap/scss/bootstrap';
 @import 'event';
+@import 'user';
 
 html,
 body,
@@ -52,6 +53,8 @@ a:hover {
   height: 50px;
   width: auto;
   border-radius: 50%;
+
+  box-shadow: 0 0 7px #666;
 }
 
 .comment .img-icon {

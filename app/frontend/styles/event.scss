@@ -55,3 +55,30 @@
 .event-comments a:hover {
   color: #e3e3e3;
 }
+
+.event-subscription {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+}
+
+.event-subscription-user {
+  margin-bottom: 10px;
+}
+
+.event-photos {
+  padding: 15px;
+  background-color: #DCDCDC;
+  box-shadow: 0 0 7px #535353;
+}
+
+.event-photo-block {
+  word-spacing: 10px;
+}
+
+.event-photo {
+  box-shadow: 0 0 3px black;
+  border-radius: 20px;
+  height: 120px;
+}

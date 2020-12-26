@@ -1,7 +1,7 @@
 <div class="text-center buffer-top">
   <h1><%= @user.name %></h1>
 
-  <%= image_tag user_avatar(@user) %>
+  <%= image_tag user_avatar(@user), class: 'user-profile-avatar' %>
 
   <% if @user == current_user %>
     <p class="buffer-top">
