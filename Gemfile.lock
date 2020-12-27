@@ -78,6 +78,10 @@ GEM
       warden (~> 1.2.3)
     devise-i18n (1.9.2)
       devise (>= 4.7.1)
+    dotenv (2.7.6)
+    dotenv-rails (2.7.6)
+      dotenv (= 2.7.6)
+      railties (>= 3.2)
     erubi (1.10.0)
     excon (0.78.1)
     execjs (2.7.0)
@@ -214,6 +218,7 @@ DEPENDENCIES
   carrierwave (~> 2.0)
   devise
   devise-i18n
+  dotenv-rails
   fog-aws
   listen
   mini_magick

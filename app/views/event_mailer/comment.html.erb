@@ -1,0 +1,14 @@
+<h1><%= t 'pages.event_mailer.comment.title' %></h1>
+<p><%= @comment.body %></p>
+<p><%= t 'pages.event_mailer.comment.author' %>: <strong><%= @comment.user_name %></strong></p>
+
+<hr/>
+
+<%= t 'pages.event_mailer.comment.event' %>
+<h3><%= @event.title %></h3>
+
+<%= t 'pages.event_mailer.comment.datetime' %>
+<h4><%= l @event.datetime %></h4>
+
+<%= t 'pages.event_mailer.comment.owner' %>
+<h4><%= @event.user.name %></h4>

@@ -149,6 +149,12 @@ en:
       add: 'Add'
 
     devise:
+      mailer:
+        reset_password:
+          hello: 'Hello'
+          someone_request: 'Someone has requested a link to change your password. You can do this through the link below'
+          if_not_u: "If you didn't request this, please ignore this email"
+          how_to_change: "Your password won't change until you access the link above and create a new one"
       password:
         new:
           static:
@@ -175,4 +181,20 @@ en:
       session:
         static:
           name: 'Login'
+
+    event_mailer:
+      comment:
+        title: 'New comment'
+        author: 'Author'
+        event: 'Event'
+        datetime: 'Will take place'
+        owner: 'Owner'
+      subscription:
+        title: 'New subscription'
+        name: 'Name'
+        email: 'Email'
+        author: 'Author'
+        event: 'Event'
+        datetime: 'Will take place'
+        owner: 'Owner'
 

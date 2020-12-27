@@ -149,6 +149,12 @@ ru:
       add: 'Добавил'
 
     devise:
+      mailer:
+        reset_password:
+          hello: 'Привет'
+          someone_request: 'Кто-то запросил ссылку для изменения вашего пароля. Сделать это можно по ссылке ниже.'
+          if_not_u: 'Если вы этого не запрашивали, не обращайте внимания на это письмо.'
+          how_to_change: 'Ваш пароль не изменится, пока вы не перейдете по ссылке выше и не создадите новый.'
       password:
         new:
           static:
@@ -170,4 +176,21 @@ ru:
       session:
         static:
           name: 'Вход'
+
+    event_mailer:
+      comment:
+        title: 'Новый комментарий'
+        author: 'Автор'
+        event: 'Событие'
+        datetime: 'Состоится'
+        owner: 'Организатор'
+      subscription:
+        title: 'Новая подписка'
+        name: 'Имя'
+        email: 'Почта'
+        author: 'Автор'
+        event: 'Событие'
+        datetime: 'Состоится'
+        owner: 'Организатор'
+
 

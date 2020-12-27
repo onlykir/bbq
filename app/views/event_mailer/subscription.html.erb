@@ -1,0 +1,14 @@
+<h1><%= t 'pages.event_mailer.subscription.title' %></h1>
+<p><%= t 'pages.event_mailer.subscription.name' %>: <strong><%= @name %></strong></p>
+<p><%= t 'pages.event_mailer.subscription.email' %>: <strong><%= link_to @email, "mailto:#{@email}" %></strong></p>
+<hr/>
+
+<%= t 'pages.event_mailer.subscription.event' %>
+
+<h3><%= @event.title %></h3>
+
+<%= t 'pages.event_mailer.subscription.author' %>
+<h4><%= l @event.datetime %></h4>
+
+<%= t 'pages.event_mailer.subscription.owner' %>
+<h4><%= @event.user.name %></h4>
