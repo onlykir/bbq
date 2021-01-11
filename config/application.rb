@@ -35,3 +35,11 @@ module Bbq
     config.i18n.default_locale = :ru
   end
 end
+
+module Mailjet
+  class Application < Rails::Application
+    config.load_defaults 6.0
+    config.generators.system_tests = nil
+    config.action_mailer.delivery_method = :mailjet
+  end
+end

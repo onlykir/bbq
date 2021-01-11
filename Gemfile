@@ -18,6 +18,7 @@ gem 'mini_magick'
 gem 'fog-aws'
 
 gem 'dotenv-rails'
+gem 'mailjet'
 
 group :development, :test do
   gem 'pry-rails'

@@ -55,15 +55,6 @@ Rails.application.configure do
 
   config.action_mailer.default_url_options = { :host => 'localhost:3000'}
 
-  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.delivery_method = :mailjet
 
-  config.action_mailer.smtp_settings = {
-    address: 'smtp.gmail.com',
-    port: 587,
-    domain: 'example.com',
-    user_name: ENV['EMAIL_NAME'],
-    password: ENV['EMAIL_PASSWORD'],
-    authentication: 'plain',
-    enable_starttls_auto: true
-  }
 end
