@@ -19,6 +19,7 @@ gem 'fog-aws'
 
 gem 'dotenv-rails'
 gem 'mailjet'
+gem 'letter_opener'
 
 group :development, :test do
   gem 'pry-rails'
