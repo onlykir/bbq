@@ -18,7 +18,6 @@ gem 'mini_magick'
 gem 'fog-aws'
 
 gem 'dotenv-rails'
-gem 'sendgrid-ruby'
 
 group :development, :test do
   gem 'pry-rails'
