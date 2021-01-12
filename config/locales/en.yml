@@ -155,6 +155,7 @@ en:
           someone_request: 'Someone has requested a link to change your password. You can do this through the link below'
           if_not_u: "If you didn't request this, please ignore this email"
           how_to_change: "Your password won't change until you access the link above and create a new one"
+          change_password_link: "Change my password"
       password:
         new:
           static:
