@@ -1,0 +1,9 @@
+<%= t 'pages.event_mailer.photo.title' %>
+----
+
+<%= t 'pages.event_mailer.photo.author' %>: <%= @photo.user.name %>
+
+--------------------------------
+<%= t 'pages.event_mailer.photo.event' %>: <%= @event.title %>
+<%= t 'pages.event_mailer.photo.datetime' %>: <%= l @event.datetime %>
+<%= t 'pages.event_mailer.photo.owner' %>: <%= @event.user.name %>

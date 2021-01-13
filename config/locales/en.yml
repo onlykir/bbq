@@ -198,4 +198,10 @@ en:
         event: 'Event'
         datetime: 'Will take place'
         owner: 'Owner'
+      photo:
+        title: 'New photo'
+        author: 'Author'
+        event: 'Event'
+        datetime: 'Will take place'
+        owner: 'Owner'
 

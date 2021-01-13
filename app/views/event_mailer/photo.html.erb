@@ -1,0 +1,14 @@
+<h1><%= t 'pages.event_mailer.photo.title' %></h1>
+
+<p><%= t 'pages.event_mailer.photo.author' %>: <%= @photo.user.name %>
+<p><%= image_tag @photo.photo.thumb.url %></p>
+<hr/>
+
+<%= t 'pages.event_mailer.photo.event' %>
+<h3><%= @event.title %></h3>
+
+<%= t 'pages.event_mailer.photo.datetime' %>
+<h4><%= l @event.datetime %></h4>
+
+<%= t 'pages.event_mailer.photo.owner' %>
+<h4><%= @event.user.name %></h4>
