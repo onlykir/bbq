@@ -45,6 +45,12 @@ ru:
       created: 'Вы добавили фотографию к событию'
       destroyed: 'Вы удалили фотку'
 
+  mailers:
+    event_mailer:
+      subscription: 'Новая подписка на'
+      comment: 'Новый комментарий'
+      photo: 'Новое фото'
+
   # Глобальные
   global:
     language: 'Язык'

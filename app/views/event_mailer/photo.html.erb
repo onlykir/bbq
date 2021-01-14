@@ -5,7 +5,11 @@
 <hr/>
 
 <%= t 'pages.event_mailer.photo.event' %>
-<h3><%= @event.title %></h3>
+<h3><%= link_to @event.title, url_for(
+    controller: 'events',
+    action: 'show',
+    id: @event,
+    massage: 'event') %></h3>
 
 <%= t 'pages.event_mailer.photo.datetime' %>
 <h4><%= l @event.datetime %></h4>

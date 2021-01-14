@@ -61,7 +61,9 @@
         <p><%= render partial: 'users/user', object: @event.user %></p>
       </div>
       <div class="event-subscriptions">
-        <h4><%= t('pages.events.show.static.will_go') %></h4>
+        <% unless @event.subscribers.empty? %>
+          <h4><%= t('pages.events.show.static.will_go') %></h4>
+        <% end %>
         <div>
           <div class="event-subscription">
             <%= render partial: 'subscriptions/subscription',
@@ -70,14 +72,17 @@
         </div>
       </div>
       <% if @event.user != current_user %>
-      <div class="event-subscription-form">
-        <h4><%= t('pages.events.show.static.i_will_go') %></h4>
-        <div>
-          <%= render partial: 'subscriptions/form', locals: {
-            subscription: @new_subscription || @event.subscriptions.build
-          } %>
+        <div class="event-subscription-form">
+          <% unless @event.subscribers.include?(current_user) %>
+            <h4><%= t('pages.events.show.static.i_will_go') %></h4>
+            <div>
+
+              <%= render partial: 'subscriptions/form', locals: {
+                  subscription: @new_subscription || @event.subscriptions.build
+              } %>
+          <% end %>
+          </div>
         </div>
-      </div>
       <% end %>
     </div>
 
