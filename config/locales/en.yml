@@ -45,11 +45,14 @@ en:
       created: 'You added a photo to the event'
       destroyed: 'You deleted the photo'
 
-  mailers:
-    event_mailer:
-      subscription: 'New subscription to'
-      comment: 'New comment'
-      photo: 'New photo'
+  event_mailer:
+    photo:
+      subject: 'New photo   @%{title}'
+    subscription:
+      subject: 'New subscription to   @%{title}'
+    comment:
+      subject: 'New comment   @%{title}'
+
   # Глобальные
   global:
     language: 'Language'

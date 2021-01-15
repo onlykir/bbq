@@ -83,7 +83,8 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   config.action_mailer.default_url_options = {host: 'goonbbq.herokuapp.com'}
-
+  config.action_controller.asset_host = "http://goonbbq.herokuapp.com"
+  config.action_mailer.asset_host = "http://goonbbq.herokuapp.com"
   # Вываливать ли посетителю сайта ошибки при отправке писем
   config.action_mailer.raise_delivery_errors = false
 
