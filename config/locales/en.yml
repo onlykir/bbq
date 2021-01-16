@@ -69,6 +69,7 @@ en:
       email_exists: 'User with such mail already exists'
       event_of_subscriber: 'You cannot subscribe to your events'
       photo_of_subscribers: 'Photos can be added only by subscribers of the event'
+      pincode: 'Wrong pin-code'
     forms:
       or: 'or'
       ready: 'Ready'
@@ -89,6 +90,7 @@ en:
         new_password: 'New password'
         new_password_confirmation: 'New password confirmation'
         p_s_condition: 'At least %{count} symbols'
+        pin: 'Pin-code'
 
   # Вьюхи
   pages:
@@ -132,6 +134,9 @@ en:
       new:
         static:
           name: 'New event'
+      password_form:
+        static:
+          name: 'Access only by pin-code'
 
     comments:
       create:

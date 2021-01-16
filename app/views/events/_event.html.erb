@@ -10,6 +10,11 @@
     <div class="thumbnail-inner event-info-inner">
       <div class="caption">
         <div class="event-description buffer-left ">
+          <div class="event-lock-icon">
+            <% if event.pincode.present?  %>
+              <%= fa_icon("lock") %>
+            <% end %>
+          </div>
           <h3><%= link_to event.title, event_path(event) %></h3>
           <h3><small><%= l event.datetime, format: :long %></small></h3>
           <div class="buffer-both"><%= event.address %></div>

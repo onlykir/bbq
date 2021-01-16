@@ -69,6 +69,7 @@ ru:
       email_exists: 'Пользователь с такой почтой уже существует'
       event_of_subscriber: 'Вы не можете подписываться на свои события'
       photo_of_subscribers: 'Фото могут добавлять только подписчики события'
+      pincode: 'Неверный пин-код'
     forms:
       or: 'или'
       ready: 'Готово'
@@ -89,6 +90,7 @@ ru:
         new_password: 'Новый пароль'
         new_password_confirmation: 'Подтверждение нового пароля'
         p_s_condition: 'Не менее %{count} символов'
+        pin: 'Пин-код'
 
   # Вьюхи
   pages:
@@ -132,6 +134,9 @@ ru:
       new:
         static:
           name: 'Новое событие'
+      password_form:
+        static:
+          name: 'Доступ только по пин-коду'
 
     comments:
       create:
