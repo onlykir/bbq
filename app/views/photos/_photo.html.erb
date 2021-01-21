@@ -1,6 +1,8 @@
 <div class="event-photos buffer-both">
   <div class="event-photo-block">
-    <%= link_to image_tag(photo.photo.thumb.url, class: 'event-photo'), photo.photo.url %>
-    <%= t('pages.photos.add') %> <%= render partial: 'users/user', object: photo.user %>
+    <% image_title = "#{t('pages.photos.create.add')} #{render partial: 'users/user', object: photo.user} #{delete_photo?(@event, photo)}" %>
+    <%= link_to image_tag(photo.photo.thumb.url, class: 'event-photo'), photo.photo.url, data: {
+        toggle: 'lightbox', title: image_title, gallery: 'event-photos'
+    } %>
   </div>
 </div>

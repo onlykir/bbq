@@ -65,8 +65,13 @@
 }
 
 .event-photos {
+  display: inline-block;
+  margin-left: 28px;
+}
+
+.event-photo-gallery {
   padding: 15px;
-  background-color: #DCDCDC;
+  background-color: #eef0f1;
   box-shadow: 0 0 7px #535353;
 }
 
@@ -76,8 +81,12 @@
 
 .event-photo {
   box-shadow: 0 0 3px black;
-  border-radius: 20px;
+  border-radius: 5px;
   height: 120px;
+}
+
+.event-photo:hover {
+  transform: scale(1.2);
 }
 
 .event-subscribers-icon {

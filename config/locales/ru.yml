@@ -159,7 +159,10 @@ ru:
         consent: 'Уверены, что хотите отменить подписку?'
 
     photos:
-      add: 'Добавил'
+      create:
+        add: 'Добавил'
+      confirm:
+        consent: 'Уверены, что хотите удалить фото?'
 
     devise:
       mailer:

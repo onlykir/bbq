@@ -39,8 +39,8 @@
            style="width: 100%; height: 300px;">
       </div>
 
-      <div class="event-photos">
-        <div class="event-photo-gallery">
+      <div class="event-photo-gallery">
+        <div>
           <%= render partial: 'photos/photo', collection: @event.photos.except(@new_photo) %>
         </div>
 

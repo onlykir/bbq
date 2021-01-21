@@ -159,7 +159,10 @@ en:
         consent: 'Are you sure you want to cancel subscription of this event?'
 
     photos:
-      add: 'Add'
+      create:
+        add: 'Add'
+      confirm:
+        consent: 'Are you sure you want to delete photo?'
 
     devise:
       mailer:
