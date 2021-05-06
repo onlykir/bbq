@@ -1,6 +1,7 @@
 Go on BBQ!
 =====================
 Educational app to publish any events with the opportunity to subscribe to the event, publish photos, leave comments.
+
 You can try bbq here:
 
 ![image](https://user-images.githubusercontent.com/71513174/117353340-ac212180-aeb8-11eb-8485-cae4fdca1fda.png)
@@ -13,6 +14,7 @@ If the user wants to make a private event, you can set a pincode for access.
 For ease of use, event addresses are displayed in Yandex maps.
 So that event subscribers can follow new comments, subscriptions or photos
 the application implements automatic mail notifications.
+
 If the user has forgotten the password for the account, it is also possible to restore it by mail.
 
 ### Requirements:
