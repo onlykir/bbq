@@ -5,17 +5,16 @@ You can try bbq here:
 
 ![image](https://user-images.githubusercontent.com/71513174/117353340-ac212180-aeb8-11eb-8485-cae4fdca1fda.png)
 
------------------------------------
 After registration, users can create any event, add a description, invite friends there, follow who will go to it, 
 as well as share photos and comments before and after it.
 On the main page there is a tile with all the events that you can go to and see detailed information.
 If the user wants to make a private event, you can set a pincode for access.
------------------------------------
+
 For ease of use, event addresses are displayed in Yandex maps.
 So that event subscribers can follow new comments, subscriptions or photos
 the application implements automatic mail notifications.
 If the user has forgotten the password for the account, it is also possible to restore it by mail.
------------------------------------
+
 ### Requirements:
 ```
 ruby '2.7.0' and Ruby on Rails 6.0.3
